@@ -24,21 +24,23 @@ public class Main {
 
             public static void task2() {
                 System.out.println("Задача 2");
-                int clientDeviceYear = 2015;
-                int x = 2015;
-                if (x <clientDeviceYear) {
-                    System.out.printf("Если год выпуска ранее 2015 года\n");
-                    if (x <clientDeviceYear) {
-                        System.out.printf("Установите облегченную версию приложения для iOS по ссылке\n");
+                int clientDeviceYear = 2012;
+                int clientOS =1;
+                if (clientDeviceYear < 2015) {
+                    if (clientOS == 0) {
+                        System.out.printf("Установите облегченную версию приложения для iOS\n");
+                    }else {
+                        System.out.printf("Установите версию приложения для iOS\n");
                     }
                 }
-                if (x >= clientDeviceYear) {
-                    System.out.printf("Для пользователей телефонов 2015 года выпуска и позже\n");
-                    if (x >= clientDeviceYear) {
-                        System.out.printf("Установите облегченную версию приложения для Android по ссылке\n");
+                else if (clientDeviceYear >= 2015) {
+                    if (clientOS == 1) {
+                        System.out.printf("Установите облегченную версию приложения для Android\n");
+                    }else {
+                        System.out.printf("Установите версию приложения для Android\n");
+                    }
+                }
 
-                    }
-                }
             }
             public static void task3() {
                 System.out.println("Задача 3");
